@@ -9,7 +9,7 @@ function createWindow () {
     }
   }
   const win = new BrowserWindow(options);
-  win.loadFile('index.html');
+  win.loadFile('app\\index.html');
 }
 
 // Electron の初期化が完了したらウィンドウを作成
