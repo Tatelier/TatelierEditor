@@ -21,7 +21,8 @@
     "compile:ts": "gulp compile:ts",
     "compile:hjson": "gulp compile:hjson",
     "compile:pug": "gulp compile:pug",
-    "compile:sass": "gulp compile:sass"
+    "compile:sass": "gulp compile:sass",
+    "start": "electron .\\dist"
   },
   "keywords": [],
   "author": "",

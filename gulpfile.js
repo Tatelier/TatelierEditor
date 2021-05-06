@@ -21,5 +21,9 @@ gulp.task('compile:sass', () => {
     return gulp.src("src/**/*.scss").pipe(sass()).pipe(gulp.dest('dist'));
 });
 
-gulp.task('compile', gulp.series(gulp.parallel('compile:ts', 'compile:hjson', 'compile:pug', 'compile:sass')));
+gulp.task('copy:package.json', () => {
+    return gulp.src("src/package.json").pipe(gulp.dest('dist'));
+});
+
+gulp.task('compile', gulp.series(gulp.parallel('compile:ts', 'compile:hjson', 'compile:pug', 'compile:sass', 'copy:package.json')));
 
