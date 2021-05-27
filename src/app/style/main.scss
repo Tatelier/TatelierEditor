@@ -1,3 +1,26 @@
 body {
     margin: 0;
+    background: #222a35;
+	background-image: linear-gradient(45deg, #303843 25%, transparent 0),
+	linear-gradient(45deg, transparent 75%, #303843 0),
+	linear-gradient(45deg, #303843 25%, transparent 0),
+	linear-gradient(45deg, transparent 75%, #303843 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px,
+		15px 15px, 30px 30px;
+    #app {
+        .all_course {
+            .course {
+                width: 400px;
+                height: 64px;
+                background-color: khaki;
+                &.now-select {
+                    background-color: #833783;
+                }
+            }
+        }
+        .announce {
+            
+        }
+    }
 }

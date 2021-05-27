@@ -9,6 +9,7 @@ function createWindow () {
     }
   }
   const win = new BrowserWindow(options);
+  win.webContents.openDevTools();
   win.loadFile('app\\index.html');
 }
 
