@@ -5,7 +5,7 @@ function createWindow () {
     width: 960,
     height: 540,
     webPreferences: {
-      nodeIntegration: true  // Node 機能の使用を許可
+      nodeIntegration: true
     }
   }
   const win = new BrowserWindow(options);
@@ -13,5 +13,6 @@ function createWindow () {
   win.loadFile('app\\index.html');
 }
 
-// Electron の初期化が完了したらウィンドウを作成
+
+
 app.whenReady().then(createWindow);
